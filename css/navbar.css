@@ -1,0 +1,136 @@
+/* Style pour la barre de navigation */
+.navbar {
+    position: fixed;
+    /* Fixe la barre de navigation à une position */
+    z-index: 999;
+    /* Assure que la barre de navigation est toujours au-dessus des autres éléments */
+    top: 50%;
+    /* Positionne la barre de navigation au milieu de la page */
+    left: 50px;
+    /* Décale la barre de navigation de 50px à gauche */
+    transform: translateY(-50%);
+    /* Centrer verticalement la barre de navigation */
+}
+
+/* Style pour le menu de la barre de navigation */
+.navbar .nav-menu {
+    margin: 0;
+    /* Supprime les marges */
+    padding: 0;
+    /* Supprime les paddings */
+    list-style-type: none;
+    /* Supprime les puces de la liste */
+}
+
+/* Style pour chaque élément de la liste du menu */
+.navbar .nav-menu li {
+    position: relative;
+    /* Position relative pour permettre le positionnement absolu des enfants */
+    min-width: 200px;
+    /* Largeur minimale de chaque élément de la liste */
+    text-align: left;
+    /* Alignement du texte à gauche */
+}
+
+/* Style pour le dot de chaque élément de la liste */
+.navbar .nav-menu li .dot {
+    display: block;
+    /* Affiche le dot comme un bloc */
+    color: #fff;
+    /* Couleur du texte du dot */
+    padding: 5px 0;
+    /* Padding autour du dot */
+}
+
+/* Style pour le dot avant et après chaque élément de la liste */
+.navbar .nav-menu li .dot::before,
+.navbar .nav-menu li .dot::after {
+    display: block;
+    /* Affiche le dot comme un bloc */
+    position: absolute;
+    /* Position absolue pour le dot */
+    content: '';
+    /* Contenu vide pour le dot */
+    border-radius: 50%;
+    /* Rend le dot rond */
+    top: 50%;
+    /* Positionne le dot au milieu de l'élément de la liste */
+    transition: all .3s ease;
+    /* Transition douce pour toutes les propriétés du dot */
+}
+
+/* Style pour le dot avant chaque élément de la liste */
+.navbar .nav-menu li .dot::before {
+    width: 5px;
+    /* Largeur du dot */
+    height: 5px;
+    /* Hauteur du dot */
+    left: 0;
+    /* Positionne le dot à gauche */
+    border: 2px solid #ffffff;
+    /* Bordure du dot */
+    transform: translateY(-50%);
+    /* Centrer verticalement le dot */
+}
+
+/* Style pour le dot après chaque élément de la liste */
+.navbar .nav-menu li .dot::after {
+    width: 15px;
+    /* Largeur du dot */
+    height: 15px;
+    /* Hauteur du dot */
+    border: 2px solid #165E8E;
+    /* Bordure du dot */
+    left: -5px;
+    /* Positionne le dot à gauche */
+    transform: translateY(-50%) scale(0);
+    /* Centrer verticalement le dot et le réduire à l'échelle 0 */
+}
+
+/* Style pour le dot lorsqu'il est actif ou survolé */
+.navbar .nav-menu li .dot.active::before,
+.navbar .nav-menu li:hover .dot::before,
+.navbar .nav-menu li .dot.active::after,
+.navbar .nav-menu li:hover .dot::after {
+    transform: translateY(-50%) scale(1);
+    /* Centrer verticalement le dot et le réduire à l'échelle 1 */
+}
+
+/* Style pour le texte du dot */
+.navbar .nav-menu li .dot span {
+    display: inline-block;
+    /* Affiche le texte comme un bloc en ligne */
+    opacity: 0;
+    /* Rend le texte transparent */
+    font-weight: 700;
+    /* Rend le texte en gras */
+    letter-spacing: .5px;
+    /* Espacement entre les lettres */
+    background-color: #165E8E;
+    /* Couleur de fond du texte */
+    padding: 10px 20px;
+    /* Padding autour du texte */
+    border-radius: 3px;
+    /* Rend les coins du texte arrondis */
+    margin-left: 30px;
+    /* Décale le texte de 30px à gauche */
+    transform: translateX(20px);
+    /* Décale le texte de 20px à droite */
+    transition: all .3s ease;
+    /* Transition douce pour toutes les propriétés du texte */
+}
+
+/* Style pour le texte du dot lorsqu'il est actif ou survolé */
+.navbar .nav-menu li .dot.active span,
+.navbar .nav-menu li:hover .dot span {
+    transform: translateX(0px);
+    /* Décale le texte de 0px à droite */
+    opacity: 1;
+    /* Rend le texte visible */
+}
+
+/* Style pour cacher la barre de navigation */
+.navbar-hidden {
+    display: none;
+    /* Cache la barre de navigation */
+}
