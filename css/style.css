@@ -506,7 +506,7 @@ body>div {
   /* Affiche les éléments en ligne */
   align-items: center;
   /* Centre les éléments verticalement */
-  justify-content: center;
+  justify-content: left;
   /* Centre les éléments horizontalement */
   gap: 10px;
   /* Espace entre les éléments */
