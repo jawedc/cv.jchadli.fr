@@ -546,7 +546,7 @@ body>div {
   justify-content: center;
   /* Centre les éléments horizontalement */
   gap: 10px;
-  Espace entre les éléments
+  /* Espace entre les éléments */
 }
 
 /* Style pour la boîte contenant les projets */
@@ -592,7 +592,7 @@ body>div {
 .CarteProjetContenu {
   display: grid;
   /* Utilisation de Grid pour la mise en page */
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
   /* Deux colonnes de tailles différentes */
 }
 
@@ -605,10 +605,11 @@ body>div {
   /* L'image de fond ne se répète pas */
   background-position: center center;
   /* L'image de fond est centrée */
+  width: 100%;
 }
 
 #imgprojet1{
-  background-image: url("../img/rpi.png");
+  background-image: url("../img/server.png");
   /* Image de fond */
 }
 
