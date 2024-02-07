@@ -570,6 +570,7 @@ body>div {
   width: 40%;
   /* Largeur de la carte */
   height: 200px;
+  /* Hauteur de la carte */
   background: #fff;
   /* Fond blanc */
   border-radius: 5px;
@@ -592,35 +593,56 @@ body>div {
 .CarteProjetContenu {
   display: grid;
   /* Utilisation de Grid pour la mise en page */
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 2fr;
   /* Deux colonnes de tailles différentes */
 }
 
 /* Style pour l'image de la carte de projet */
-.CarteProjetImg {
-  background-image: url("https://source.unsplash.com/random");
+.CarteProjetImgRPI {
+  background-image: url("../img/server.png");
+  /* Image de fond aléatoire */
   background-size: cover;
   /* L'image de fond couvre toute la zone */
   background-repeat: no-repeat;
   /* L'image de fond ne se répète pas */
   background-position: center center;
   /* L'image de fond est centrée */
-  width: 100%;
 }
 
-#imgprojet1{
-  background-image: url("../img/server.png");
-  /* Image de fond */
-}
-
-#imgprojet2{
-  background-image: url("../img/site.png");
-  /* Image de fond */
-}
-#imgprojet3{
+/* Style pour l'image de la carte de projet */
+.CarteProjetImgSAE15 {
   background-image: url("../img/cyber-security.jpg");
-  /* Image de fond */
+  /* Image de fond aléatoire */
+  background-size: cover;
+  /* L'image de fond couvre toute la zone */
+  background-repeat: no-repeat;
+  /* L'image de fond ne se répète pas */
+  background-position: center center;
+  /* L'image de fond est centrée */
 }
+
+.CarteProjetImgSAE12 {
+  background-image: url("../img/cyber-security.jpg");
+  /* Image de fond aléatoire */
+  background-size: cover;
+  /* L'image de fond couvre toute la zone */
+  background-repeat: no-repeat;
+  /* L'image de fond ne se répète pas */
+  background-position: center center;
+  /* L'image de fond est centrée */
+}
+
+.CarteProjetImgSAE13 {
+  background-image: url("../img/site.png");
+  /* Image de fond aléatoire */
+  background-size: cover;
+  /* L'image de fond couvre toute la zone */
+  background-repeat: no-repeat;
+  /* L'image de fond ne se répète pas */
+  background-position: center center;
+  /* L'image de fond est centrée */
+}
+
 /* Style pour le texte de la carte de projet */
 .CarteProjetTxt {
   text-align: center;

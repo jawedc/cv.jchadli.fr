@@ -1,515 +1,456 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Titre de la page -->
-    <title>Portfolio</title>
-    <!-- Métadonnées générales -->
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Portfolio réalisé dans le cadre de la SAE14."
-    />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="keywords"
-      content="CV, SAE, BUT R&T, BUT RT, compétences, portfolio"
-    />
-    <link rel="icon" href="favicon.ico" />
-    <!-- Métadonnées pour les réseaux sociaux (Open Graph) -->
-    <meta property="og:title" content="Jawed - Portfolio" />
-    <meta
-      property="og:description"
-      content="Portfolio réalisé dans le cadre de la SAE14."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://cv.jchadli.fr/jchadli/" />
-    <meta
-      property="og:image"
-      content="https://cv.jchadli.fr/jchadli/img/preview.png"
-    />
-    <!-- Liens vers les fichiers CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/frise.css" />
-    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
-  </head>
 
-  <body>
-    <!-- Début de la barre de navigation -->
-    <nav id="navbar" class="navbar navbar-hidden">
-      <!-- Début de la liste de navigation -->
-      <ul class="nav-menu">
-        <!-- Chaque élément de la liste est un lien vers une section du site -->
-        <li>
-          <a data-scroll="page-accueil" href="#page-accueil" class="dot">
-            <span>Accueil</span>
-          </a>
-        </li>
-        <li>
-          <a data-scroll="presentation" href="#presentation" class="dot">
-            <span>À propos de moi</span>
-          </a>
-        </li>
-        <li>
-          <a data-scroll="diplomescertif" href="#diplomescertif" class="dot">
-            <span>Diplômes et Certifications</span>
-          </a>
-        </li>
-        <li>
-          <a data-scroll="competences" href="#competences" class="dot">
-            <span>Compétences</span>
-          </a>
-        </li>
-        <li>
-          <a data-scroll="langues" href="#langues" class="dot">
-            <span>Langues</span>
-          </a>
-        </li>
-        <li>
-          <a data-scroll="projets" href="#projets" class="dot">
-            <span>Projets</span>
-          </a>
-        </li>
-        <li>
-          <a data-scroll="experiences" href="#experiences" class="dot">
-            <span>Expériences</span>
-          </a>
-        </li>
-        <li>
-          <a data-scroll="contact" href="#contact" class="dot">
-            <span>Contact</span>
-          </a>
-        </li>
-        <!-- Fin de la liste de navigation -->
+<head>
+  <!-- Titre de la page -->
+  <title>Portfolio</title>
+  <!-- Métadonnées générales -->
+  <meta charset="utf-8" />
+  <meta name="description" content="Portfolio réalisé dans le cadre de la SAE14." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="CV, SAE, BUT R&T, BUT RT, compétences, portfolio" />
+  <link rel="icon" href="favicon.ico" />
+  <!-- Métadonnées pour les réseaux sociaux (Open Graph) -->
+  <meta property="og:title" content="Jawed - Portfolio" />
+  <meta property="og:description" content="Portfolio réalisé dans le cadre de la SAE14." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cv.jchadli.fr/jchadli/" />
+  <meta property="og:image" content="https://cv.jchadli.fr/jchadli/img/preview.png" />
+  <!-- Liens vers les fichiers CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/frise.css" />
+  <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+</head>
+
+<body>
+  <!-- Début de la barre de navigation -->
+  <nav id="navbar" class="navbar navbar-hidden">
+    <!-- Début de la liste de navigation -->
+    <ul class="nav-menu">
+      <!-- Chaque élément de la liste est un lien vers une section du site -->
+      <li>
+        <a data-scroll="page-accueil" href="#page-accueil" class="dot">
+          <span>Accueil</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="presentation" href="#presentation" class="dot">
+          <span>À propos de moi</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="diplomescertif" href="#diplomescertif" class="dot">
+          <span>Diplômes et Certifications</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="competences" href="#competences" class="dot">
+          <span>Compétences</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="langues" href="#langues" class="dot">
+          <span>Langues</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="projets" href="#projets" class="dot">
+          <span>Projets</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="experiences" href="#experiences" class="dot">
+          <span>Expériences</span>
+        </a>
+      </li>
+      <li>
+        <a data-scroll="contact" href="#contact" class="dot">
+          <span>Contact</span>
+        </a>
+      </li>
+      <!-- Fin de la liste de navigation -->
+    </ul>
+    <!-- Fin de la barre de navigation -->
+  </nav>
+  <!-- Début de la page d'accueil -->
+  <div id="page-accueil">
+    <!-- Titre de la page d'accueil -->
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <!-- Section déroulante -->
+    <div id="deroulant">
+      <!-- Liste de descriptions -->
+      <ul class="tournicoti">
+        <li>Je suis Jawed</li>
+        <li>Je suis Étudiant</li>
+        <li>Je suis Développeur</li>
+        <li>Je suis Passionné</li>
+        <li>Je suis Curieux</li>
       </ul>
-      <!-- Fin de la barre de navigation -->
-    </nav>
-    <!-- Début de la page d'accueil -->
-    <div id="page-accueil">
-      <!-- Titre de la page d'accueil -->
-      <h1>Bienvenue sur mon Portfolio</h1>
-      <!-- Section déroulante -->
-      <div id="deroulant">
-        <!-- Liste de descriptions -->
-        <ul class="tournicoti">
-          <li>Je suis Jawed</li>
-          <li>Je suis Étudiant</li>
-          <li>Je suis Développeur</li>
-          <li>Je suis Passionné</li>
-          <li>Je suis Curieux</li>
-        </ul>
-      </div>
-      <!-- Lien vers la section de présentation avec une flèche -->
-      <a href="#presentation" class="scroll-arrow" id="arrow-1">
-        <img
-          id="1arrow-1"
-          src="img/fleche.png"
-          alt="Flèche pour continuer la navigation"
-        />
-      </a>
     </div>
-    <!-- Fin de la page d'accueil -->
-    <!-- Début de la section de présentation -->
-    <div id="presentation">
-      <!-- Boîte de présentation -->
-      <div id="boitepresentation" class="box-two-rows-tow-columns">
-        <!-- Titre de la section -->
-        <h2 class="title-box box-two-rows-tow-columns-first-element">
-          À propos de moi
-        </h2>
-        <!-- Image de profil -->
-        <img
-          class="box-two-rows-tow-columns-second-element"
-          id="imgprofil"
-          src="img/pdp.jpg"
-          alt="Photo de profil"
-        />
-        <!-- Description de la personne -->
-        <p class="box-two-rows-tow-columns-third-element">
-          Élève de première année en BUT Réseaux et Télécommunications à l’IUT
-          de Villetaneuse. Je suis passionné par l’informatique mais plus
-          précisément par le domaine de la cybersécurité ainsi que par le sport.
-          Je recherche un contrat d’apprentissage dans le domaine de la sécurité
-          informatique pour ma deuxième année de BUT. Cela me permettrai
-          d’acquérir des compétences professionnelles en parallèle de mes
-          études.
+    <!-- Lien vers la section de présentation avec une flèche -->
+    <a href="#presentation" class="scroll-arrow" id="arrow-1">
+      <img id="1arrow-1" src="img/fleche.png" alt="Flèche pour continuer la navigation" />
+    </a>
+  </div>
+  <!-- Fin de la page d'accueil -->
+  <!-- Début de la section de présentation -->
+  <div id="presentation">
+    <!-- Boîte de présentation -->
+    <div id="boitepresentation" class="box-two-rows-tow-columns">
+      <!-- Titre de la section -->
+      <h2 class="title-box box-two-rows-tow-columns-first-element">
+        À propos de moi
+      </h2>
+      <!-- Image de profil -->
+      <img class="box-two-rows-tow-columns-second-element" id="imgprofil" src="img/pdp.jpg" alt="Photo de profil" />
+      <!-- Description de la personne -->
+      <p class="box-two-rows-tow-columns-third-element">
+        Élève de première année en BUT Réseaux et Télécommunications à l’IUT
+        de Villetaneuse. Je suis passionné par l’informatique mais plus
+        précisément par le domaine de la cybersécurité ainsi que par le sport.
+        Je recherche un contrat d’apprentissage dans le domaine de la sécurité
+        informatique pour ma deuxième année de BUT. Cela me permettrai
+        d’acquérir des compétences professionnelles en parallèle de mes
+        études.
+      </p>
+    </div>
+    <!-- Lien pour naviguer vers la section suivante -->
+    <a href="#diplomescertif" class="scroll-arrow" id="arrow-2">
+      <img id="2arrow-2" src="img/fleche.png" alt="Flèche pour continuer la navigation" />
+    </a>
+  </div>
+  <!-- Fin de la section de présentation -->
+  <!-- Début de la section des diplômes et certifications -->
+  <div id="diplomescertif">
+    <!-- Boîte des diplômes et certifications -->
+    <div id="boitediplomecertif" class="box-two-rows-tow-columns">
+      <!-- Titre de la section -->
+      <h2 class="title-box box-two-rows-tow-columns-first-element">
+        Diplômes et certifications
+      </h2>
+      <!-- Liste des diplômes -->
+      <div class="box-two-rows-tow-columns-second-element" id="box-diplomes">
+        <h2>Diplômes</h2>
+        <!-- Chaque diplôme est dans une div séparée -->
+        <!-- Carte de diplôme 1 -->
+        <div>
+          <h3>BUT Réseaux et Télécommunications</h3>
+          <i>En cours</i>
+          <p>Université Sorbonne Paris Nord, IUT de Villetaneuse</p>
+        </div>
+        <!-- Carte de diplôme 2 -->
+        <div>
+          <h3>Baccalauréat Général</h3>
+          <i>2023</i>
+          <p>
+            Spécialités Mathématiques et Physique-Chimie, Lycée
+            Fénelon,Vaujours
+          </p>
+        </div>
+        <!-- Carte de diplôme 3 -->
+        <div>
+          <h3>Formation générale BAFA</h3>
+          <i>2022</i>
+          <p>UCPA</p>
+        </div>
+      </div>
+      <!-- Liste des certifications -->
+      <div class="box-two-rows-tow-columns-third-element" id="box-certif">
+        <h2>Certifications</h2>
+        <!-- Chaque certification est dans une div séparée -->
+        <!-- Carte de certification 1 -->
+        <div>
+          <h3>Certification PIX</h3>
+          <i>2023</i>
+          <p>code : P-WY26DQQX, Lycée Fénelon, Vaujours</p>
+        </div>
+        <!-- Carte de certification 2 -->
+        <div>
+          <h3>
+            Formation d'équipier de pompiersFormation d'équipier de pompiers
+          </h3>
+          <i>2022</i>
+          <p>SDIS 95</p>
+        </div>
+        <!-- Carte de certification 3 -->
+        <div>
+          <h3>Sprachdiplom A2</h3>
+          <i>2021</i>
+          <p>Ministère de la culture allemand</p>
+        </div>
+      </div>
+    </div>
+    <!-- Lien pour naviguer vers la section suivante -->
+    <a href="#competences" class="scroll-arrow" id="arrow-3">
+      <img id="3arrow-3" src="img/fleche.png" alt="Flèche pour continuer la navigation" />
+    </a>
+  </div>
+  <!-- Fin de la section des diplômes et certifications -->
+  <!-- Section Compétences -->
+  <div id="competences">
+    <!-- Boîte contenant toutes les compétences -->
+    <div id="boitecompetences">
+      <!-- Titre de la section -->
+      <h2 class="title-box">Compétences</h2>
+      <!-- Liste des compétences -->
+      <div>
+        <!-- Compétences en langages de programmation -->
+        <div>
+          <h3>Langages de programmation</h3>
+          <div class="competences-button" id="langages">
+            <button>HTML/CSS</button>
+            <button>Python</button>
+            <button>Arduino</button>
+            <button>Bash</button>
+          </div>
+        </div>
+        <!-- Compétences en logiciels -->
+        <div>
+          <h3>Logiciels</h3>
+          <div id="logiciels">
+            <button>VirtualBox</button>
+            <button>Canva</button>
+            <button>VSCode</button>
+            <button>Git</button>
+            <button>Outils bureautique</button>
+          </div>
+        </div>
+        <!-- Compétences en systèmes d'exploitation -->
+        <div>
+          <h3>Systèmes d'exploitation</h3>
+          <div id="systemes">
+            <button>Linux</button>
+            <button>Windows</button>
+          </div>
+        </div>
+        <!-- Autres compétences -->
+        <div>
+          <h3>Autres</h3>
+          <div id="autres">
+            <button>Paramétrage Réseau</button>
+            <button>Communication IP</button>
+            <button>Serveur DNS</button>
+            <button>Configuration de réseau</button>
+            <button>Gestion de projet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Flèche pour naviguer vers la section suivante -->
+    <a href="#langues" class="scroll-arrow" id="arrow-4">
+      <img id="4arrow-4" src="img/fleche.png" alt="Flèche pour continuer la navigation" />
+    </a>
+  </div>
+  <!-- Section Langues -->
+  <div id="langues">
+    <!-- Boîte contenant toutes les langues -->
+    <div id="boitelangues">
+      <!-- Titre de la section -->
+      <h2>Langues</h2>
+      <!-- Liste des langues -->
+      <div>
+        <!-- Anglais -->
+        <div id="en">
+          <img src="img/en.png" alt="drapeau de la france" />
+          <h3>Professionnel</h3>
+        </div>
+        <!-- Allemand -->
+        <div id="de">
+          <img src="img/de.png" alt="drapeau de la france" />
+          <h3>Basique</h3>
+        </div>
+      </div>
+    </div>
+    <!-- Flèche pour naviguer vers la section suivante -->
+    <a href="#projets" class="scroll-arrow" id="arrow-5">
+      <img id="5arrow-5" src="img/fleche.png" alt="Flèche pour continuer la navigation" />
+    </a>
+  </div>
+  <!-- Section Projets -->
+  <div id="projets">
+    <!-- Cette div contient toute la page pour les projets -->
+    <div id="boiteprojets">
+      <h2 class="title-box" id="Projets">Projets</h2>
+      <div>
+        <!-- Carte de projet 1 -->
+        <div class="CarteProjet">
+          <div class="CarteProjetContenu">
+            <div class="CarteProjetImgRPI"></div>
+            <div class="CarteProjetTxt">
+              <h3>Auto-hébergement</h3>
+              <p>Installation d'une solution d'auto hébergement servant notamment au stockage de fichiers sur un cloud
+                personnel.
+              </p>
+              <a href="https://jchadli.fr/">Voir les services que j'héberge</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte de projet 2 -->
+        <!-- Le contenu est identique à la carte de projet 1 -->
+        <div class="CarteProjet">
+          <div class="CarteProjetContenu">
+            <div class="CarteProjetImgSAE15"></div>
+            <div class="CarteProjetTxt">
+              <h3>Script Python</h3>
+              <p>Programmation d’un script Python ayant pour objectif le traitement de données contenues dans deux
+                fichiers “.csv” ainsi que leur présentation dans une page html, réalisé dans le cadre de mes études.
+              </p>
+              <a href="https://saala.org">Voir le code sur Github</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte de projet 3 -->
+        <!-- Le contenu est identique à la carte de projet 1 -->
+        <div class="CarteProjet">
+          <div class="CarteProjetContenu">
+            <div class="CarteProjetImgSAE12"></div>
+            <div class="CarteProjetTxt">
+              <h3>Réseau virtuel</h3>
+              <p>Création, configuration et sécurisation d’un réseau virtuel et des différentes machines le composant, réalisé dans le cadre de mes études. </p>
+            </div>
+          </div>
+        </div>
+        <!-- Carte de projet 4 -->
+        <!-- Le contenu est identique à la carte de projet 1 -->
+        <div class="CarteProjet">
+          <div class="CarteProjetContenu">
+            <div class="CarteProjetImgSAE13"></div>
+            <div class="CarteProjetTxt">
+              <h3>Portefolio en ligne</h3>
+              <p>Réalisation de ce portfolio en ligne en binôme dans le cadre du BUT Réseaux et Télécommunications à
+                l'IUT de Villetaneuse
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Flèche pour continuer la navigation -->
+    <a href="#experiences" class="scroll-arrow" id="arrow-6">
+      <img id="6arrow-6" src="img/fleche.png" alt="Flèche pour continuer la navigation">
+    </a>
+  </div>
+  <!-- Section Expériences -->
+  <div id="experiences">
+    <div id="boiteexperiences">
+      <!-- Cette div contient toute la page pour les expériences -->
+      <h2>Expériences</h2>
+      <ul class="frise">
+        <!-- Item 1 -->
+        <li>
+          <div class="xp-d">
+            <div class="drapeauxp">
+              <span class="titrexp">Animateur BAFA</span>
+              <span class="anneedrapeauxp">
+                <span class="anneexp">2023/24 (2 mois)</span>
+              </span>
+            </div>
+            <div class="descriptionxp">
+              Durant les vacances scolaires, j’occupe régulièrement le poste
+              d’animateur. Je me charge de proposer aux enfants des activités
+              éducatives tout en s’assurant de leur <b>sécurité.</b>
+            </div>
+          </div>
+        </li>
+        <!-- Item 2 -->
+        <li>
+          <div class="xp-g">
+            <div class="drapeauxp">
+              <span class="titrexp">Animateur BAFA</span>
+              <span class="anneedrapeauxp">
+                <span class="anneexp">02/2023 (1 semaine)</span>
+              </span>
+            </div>
+            <div class="descriptionxp">
+              Dans le cadre d'un séjour au ski à La Plagne, j'ai pu m'occuper
+              d'enfants âgés de 7 à 11 ans au quotidien et créer des
+              animations.
+            </div>
+          </div>
+        </li>
+        <!-- Item 3 -->
+        <li>
+          <div class="xp-d">
+            <div class="drapeauxp">
+              <span class="titrexp">SNU</span>
+              <span class="anneedrapeauxp">
+                <span class="anneexp">2022 (1 mois)</span>
+              </span>
+            </div>
+            <div class="descriptionxp">
+              J’ai participé à un séjour de cohésion d’une durée de 12 jours
+              en Juin 2021 ainsi que deux semaines d’immersion chez les
+              pompiers en Février et en Avril 2022, une semaine de formation
+              suivie d’une semaine d’immersion en caserne de pompiers de
+              Garges-Lès-Gonesse. Ce stage m’a permis d’acquérir une meilleure
+              autonomie, d’apprendre à travailler en équipe ainsi que
+              d’apprendre à gérer un groupe.
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Flèche pour continuer la navigation -->
+    <a href="#contact" class="scroll-arrow" id="arrow-7">
+      <img id="7arrow-7" src="img/fleche.png" alt="Flèche pour continuer la navigation" />
+    </a>
+  </div>
+  <!-- Début de la section Contact -->
+  <div id="contact">
+    <!-- Cette div contient toute la page de contact et de téléchargement du cv -->
+    <div id="boitecontact" class="box-two-rows-tow-columns">
+      <!-- Titre de la section -->
+      <h2 class="title-box box-two-rows-tow-columns-first-element">
+        Contact
+      </h2>
+      <!-- Formulaire de contact -->
+      <div class="box-two-rows-tow-columns-second-element" id="contact-form">
+        <!-- Champ Nom -->
+        <p>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="user_nom" />
         </p>
+        <!-- Champ Prénom -->
+        <p>
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="user_prenom" />
+        </p>
+        <!-- Champ E-mail -->
+        <p>
+          <label for="mail">E-mail :</label>
+          <input type="email" id="mail" name="user_mail" />
+        </p>
+        <!-- Champ Message -->
+        <p>
+          <label for="msg">Votre message :</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </p>
+        <!-- Bouton d'envoi -->
+        <button onclick="mail()">Envoyer</button>
       </div>
-      <!-- Lien pour naviguer vers la section suivante -->
-      <a href="#diplomescertif" class="scroll-arrow" id="arrow-2">
-        <img
-          id="2arrow-2"
-          src="img/fleche.png"
-          alt="Flèche pour continuer la navigation"
-        />
-      </a>
-    </div>
-    <!-- Fin de la section de présentation -->
-    <!-- Début de la section des diplômes et certifications -->
-    <div id="diplomescertif">
-      <!-- Boîte des diplômes et certifications -->
-      <div id="boitediplomecertif" class="box-two-rows-tow-columns">
+      <!-- Section de téléchargement du CV -->
+      <div class="box-two-rows-tow-columns-third-element" id="cv">
         <!-- Titre de la section -->
-        <h2 class="title-box box-two-rows-tow-columns-first-element">
-          Diplômes et certifications
-        </h2>
-        <!-- Liste des diplômes -->
-        <div class="box-two-rows-tow-columns-second-element" id="box-diplomes">
-          <h2>Diplômes</h2>
-          <!-- Chaque diplôme est dans une div séparée -->
-          <!-- Carte de diplôme 1 -->
-          <div>
-            <h3>BUT Réseaux et Télécommunications</h3>
-            <i>En cours</i>
-            <p>Université Sorbonne Paris Nord, IUT de Villetaneuse</p>
-          </div>
-          <!-- Carte de diplôme 2 -->
-          <div>
-            <h3>Baccalauréat Général</h3>
-            <i>2023</i>
-            <p>
-              Spécialités Mathématiques et Physique-Chimie, Lycée
-              Fénelon,Vaujours
-            </p>
-          </div>
-          <!-- Carte de diplôme 3 -->
-          <div>
-            <h3>Formation générale BAFA</h3>
-            <i>2022</i>
-            <p>UCPA</p>
-          </div>
-        </div>
-        <!-- Liste des certifications -->
-        <div class="box-two-rows-tow-columns-third-element" id="box-certif">
-          <h2>Certifications</h2>
-          <!-- Chaque certification est dans une div séparée -->
-          <!-- Carte de certification 1 -->
-          <div>
-            <h3>Certification PIX</h3>
-            <i>2023</i>
-            <p>code : P-WY26DQQX, Lycée Fénelon, Vaujours</p>
-          </div>
-          <!-- Carte de certification 2 -->
-          <div>
-            <h3>
-              Formation d'équipier de pompiersFormation d'équipier de pompiers
-            </h3>
-            <i>2022</i>
-            <p>SDIS 95</p>
-          </div>
-          <!-- Carte de certification 3 -->
-          <div>
-            <h3>Sprachdiplom A2</h3>
-            <i>2021</i>
-            <p>Ministère de la culture allemand</p>
-          </div>
-        </div>
-      </div>
-      <!-- Lien pour naviguer vers la section suivante -->
-      <a href="#competences" class="scroll-arrow" id="arrow-3">
-        <img
-          id="3arrow-3"
-          src="img/fleche.png"
-          alt="Flèche pour continuer la navigation"
-        />
-      </a>
-    </div>
-    <!-- Fin de la section des diplômes et certifications -->
-    <!-- Section Compétences -->
-    <div id="competences">
-      <!-- Boîte contenant toutes les compétences -->
-      <div id="boitecompetences">
-        <!-- Titre de la section -->
-        <h2 class="title-box">Compétences</h2>
-        <!-- Liste des compétences -->
-        <div>
-          <!-- Compétences en langages de programmation -->
-          <div>
-            <h3>Langages de programmation</h3>
-            <div class="competences-button" id="langages">
-              <button>HTML/CSS</button>
-              <button>Python</button>
-              <button>Arduino</button>
-              <button>Bash</button>
-            </div>
-          </div>
-          <!-- Compétences en logiciels -->
-          <div>
-            <h3>Logiciels</h3>
-            <div id="logiciels">
-              <button>VirtualBox</button>
-              <button>Canva</button>
-              <button>VSCode</button>
-              <button>Git</button>
-              <button>Outils bureautique</button>
-            </div>
-          </div>
-          <!-- Compétences en systèmes d'exploitation -->
-          <div>
-            <h3>Systèmes d'exploitation</h3>
-            <div id="systemes">
-              <button>Linux</button>
-              <button>Windows</button>
-            </div>
-          </div>
-          <!-- Autres compétences -->
-          <div>
-            <h3>Autres</h3>
-            <div id="autres">
-              <button>Paramétrage Réseau</button>
-              <button>Communication IP</button>
-              <button>Serveur DNS</button>
-              <button>Configuration de réseau</button>
-              <button>Gestion de projet</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Flèche pour naviguer vers la section suivante -->
-      <a href="#langues" class="scroll-arrow" id="arrow-4">
-        <img
-          id="4arrow-4"
-          src="img/fleche.png"
-          alt="Flèche pour continuer la navigation"
-        />
-      </a>
-    </div>
-    <!-- Section Langues -->
-    <div id="langues">
-      <!-- Boîte contenant toutes les langues -->
-      <div id="boitelangues">
-        <!-- Titre de la section -->
-        <h2>Langues</h2>
-        <!-- Liste des langues -->
-        <div>
-          <!-- Anglais -->
-          <div id="en">
-            <img src="img/en.png" alt="drapeau de la france" />
-            <h3>Professionnel</h3>
-          </div>
-          <!-- Allemand -->
-          <div id="de">
-            <img src="img/de.png" alt="drapeau de la france" />
-            <h3>Basique</h3>
-          </div>
-        </div>
-      </div>
-      <!-- Flèche pour naviguer vers la section suivante -->
-      <a href="#projets" class="scroll-arrow" id="arrow-5">
-        <img
-          id="5arrow-5"
-          src="img/fleche.png"
-          alt="Flèche pour continuer la navigation"
-        />
-      </a>
-    </div>
-    <!-- Section Projets -->
-    <div id="projets">
-      <!-- Cette div contient toute la page pour les projets -->
-      <div id="boiteprojets" >
-        <h2 class="title-box" id="Projets">Projets</h2>
-        <div>
-          <!-- Carte de projet 1 -->
-          <div class="CarteProjet">
-            <div class="CarteProjetContenu">
-              <div class="CarteProjetImg" id="imgprojet1"></div>
-              <div class="CarteProjetTxt">
-                <h3>Serveur auto-hébergé</h3>
-                <p>
-                  Installation d'une solution d'<b>auto hébergement</b> servant
-                  notamment au stockage de fichiers sur un cloud personnel.
-                </p>
-                <!-- <a href="#">View Project</a> -->
-              </div>
-            </div>
-          </div>
-          <!-- Carte de projet 2 -->
-          <div class="CarteProjet">
-            <div class="CarteProjetContenu">
-              <div class="CarteProjetImg" id="imgprojet2"></div>
-              <div class="CarteProjetTxt">
-                <h3>Script Python</h3>
-                <p>
-                  Programmation d’un script Python ayant pour objectif le
-                  traitement de données contenues dans deux fichiers “.csv”
-                  ainsi que leur présentation dans une page html, réalisé dans
-                  le cadre de mes études.
-                </p>
-                <!-- <a href="#">View Project</a> -->
-              </div>
-            </div>
-          </div>
-          <!-- Carte de projet 3 -->
-          <div class="CarteProjet">
-            <div class="CarteProjetContenu">
-              <div class="CarteProjetImg" id="imgprojet3"></div>
-              <div class="CarteProjetTxt">
-                <h3>Portfolio en ligne</h3>
-                <p>
-                  Réalisation de ce portfolio en ligne en binôme dans le cadre
-                  du BUT Réseaux et Télécommunications à l'IUT de Villetaneuse
-                </p>
-                <!-- <a href="#">View Project</a> -->
-              </div>
-            </div>
-          </div>
-          <!-- Carte de projet 4 -->
-          <div class="CarteProjet">
-            <div class="CarteProjetContenu">
-              <div class="CarteProjetImg" id="imgprojet4"></div>
-              <div class="CarteProjetTxt">
-                <h3>Réseau virtuel</h3>
-                <p>
-                  Création, configuration et sécurisation d’un réseau virtuel et
-                  des différentes machines le composant, réalisé dans le cadre
-                  de mes études.
-                </p>
-                <!-- <a href="#">View Project</a> -->
-              </div>
-            </div>
-          </div>
-          <!-- Carte de projet 4 -->
-          <!-- Le contenu est identique à la carte de projet 1 -->
-        </div>
-      </div>
-      <!-- Flèche pour continuer la navigation -->
-      <a href="#experiences" class="scroll-arrow" id="arrow-6">
-        <img
-          id="6arrow-6"
-          src="img/fleche.png"
-          alt="Flèche pour continuer la navigation"
-        />
-      </a>
-    </div>
-    <!-- Section Expériences -->
-    <div id="experiences">
-      <div id="boiteexperiences">
-        <!-- Cette div contient toute la page pour les expériences -->
-        <h2>Expériences</h2>
-        <ul class="frise">
-          <!-- Item 1 -->
-          <li>
-            <div class="xp-d">
-              <div class="drapeauxp">
-                <span class="titrexp">Animateur BAFA</span>
-                <span class="anneedrapeauxp">
-                  <span class="anneexp">2023/24 (2 mois)</span>
-                </span>
-              </div>
-              <div class="descriptionxp">
-                Durant les vacances scolaires, j’occupe régulièrement le poste
-                d’animateur. Je me charge de proposer aux enfants des activités
-                éducatives tout en s’assurant de leur <b>sécurité.</b>
-              </div>
-            </div>
-          </li>
-          <!-- Item 2 -->
-          <li>
-            <div class="xp-g">
-              <div class="drapeauxp">
-                <span class="titrexp">Animateur BAFA</span>
-                <span class="anneedrapeauxp">
-                  <span class="anneexp">02/2023 (1 semaine)</span>
-                </span>
-              </div>
-              <div class="descriptionxp">
-                Dans le cadre d'un séjour au ski à La Plagne, j'ai pu m'occuper
-                d'enfants âgés de 7 à 11 ans au quotidien et créer des
-                animations.
-              </div>
-            </div>
-          </li>
-          <!-- Item 3 -->
-          <li>
-            <div class="xp-d">
-              <div class="drapeauxp">
-                <span class="titrexp">SNU</span>
-                <span class="anneedrapeauxp">
-                  <span class="anneexp">2022 (1 mois)</span>
-                </span>
-              </div>
-              <div class="descriptionxp">
-                J’ai participé à un séjour de cohésion d’une durée de 12 jours
-                en Juin 2021 ainsi que deux semaines d’immersion chez les
-                pompiers en Février et en Avril 2022, une semaine de formation
-                suivie d’une semaine d’immersion en caserne de pompiers de
-                Garges-Lès-Gonesse. Ce stage m’a permis d’acquérir une meilleure
-                autonomie, d’apprendre à travailler en équipe ainsi que
-                d’apprendre à gérer un groupe.
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- Flèche pour continuer la navigation -->
-      <a href="#contact" class="scroll-arrow" id="arrow-7">
-        <img
-          id="7arrow-7"
-          src="img/fleche.png"
-          alt="Flèche pour continuer la navigation"
-        />
-      </a>
-    </div>
-    <!-- Début de la section Contact -->
-    <div id="contact">
-      <!-- Cette div contient toute la page de contact et de téléchargement du cv -->
-      <div id="boitecontact" class="box-two-rows-tow-columns">
-        <!-- Titre de la section -->
-        <h2 class="title-box box-two-rows-tow-columns-first-element">
-          Contact
-        </h2>
-        <!-- Formulaire de contact -->
-        <div class="box-two-rows-tow-columns-second-element" id="contact-form">
-          <!-- Champ Nom -->
-          <p>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="user_nom" />
-          </p>
-          <!-- Champ Prénom -->
-          <p>
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="user_prenom" />
-          </p>
-          <!-- Champ E-mail -->
-          <p>
-            <label for="mail">E-mail :</label>
-            <input type="email" id="mail" name="user_mail" />
-          </p>
-          <!-- Champ Message -->
-          <p>
-            <label for="msg">Votre message :</label>
-            <textarea id="msg" name="user_message"></textarea>
-          </p>
-          <!-- Bouton d'envoi -->
-          <button onclick="mail()">Envoyer</button>
-        </div>
-        <!-- Section de téléchargement du CV -->
-        <div class="box-two-rows-tow-columns-third-element" id="cv">
-          <!-- Titre de la section -->
-          <h3>Mon CV</h3>
-          <!-- Bouton de téléchargement -->
-          <button
-            class="cv"
-            id="cv-button"
-            onclick="location.href='./ressources/cv.pdf'"
-            type="button"
-          >
-            Télécharger
-          </button>
-        </div>
+        <h3>Mon CV</h3>
+        <!-- Bouton de téléchargement -->
+        <button class="cv" id="cv-button" onclick="location.href='./ressources/cv.pdf'" type="button">
+          Télécharger
+        </button>
       </div>
     </div>
-    <!-- Début du pied de page -->
-    <footer id="footer">
-      <!-- Copyright -->
-      <p>© 2023 Tristan BRINGUIER & Jawed CHADLI. Tous droits réservés.</p>
-      <!-- Liens vers les réseaux sociaux -->
-      <a href="https://www.linkedin.com/in/jawed-chadli/" target="_blank"
-        >LinkedIn</a
-      >
-      <a href="https://jchadli.fr" target="_blank">Site</a>
-    </footer>
-    <!-- Lien vers le fichier JavaScript (chargement à la fin pour avoir toute la page de pré-construite) -->
-    <script src="javascript/main.js"></script>
-  </body>
+  </div>
+  <!-- Début du pied de page -->
+  <footer id="footer">
+    <!-- Copyright -->
+    <p>© 2023 Tristan BRINGUIER & Jawed CHADLI. Tous droits réservés.</p>
+    <!-- Liens vers les réseaux sociaux -->
+    <a href="https://www.linkedin.com/in/jawed-chadli/" target="_blank">LinkedIn</a>
+    <a href="https://jchadli.fr" target="_blank">Site</a>
+  </footer>
+  <!-- Lien vers le fichier JavaScript (chargement à la fin pour avoir toute la page de pré-construite) -->
+  <script src="javascript/main.js"></script>
+</body>
+
 </html>
