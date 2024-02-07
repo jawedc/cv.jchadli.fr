@@ -633,7 +633,7 @@ body>div {
 }
 
 .CarteProjetImgSAE13 {
-  background-image: url("../img/site.png");
+  background-image: url("../img/site2.png");
   /* Image de fond aléatoire */
   background-size: cover;
   /* L'image de fond couvre toute la zone */
@@ -641,6 +641,8 @@ body>div {
   /* L'image de fond ne se répète pas */
   background-position: center center;
   /* L'image de fond est centrée */
+  height: 60%;
+  width: 60%;
 }
 
 /* Style pour le texte de la carte de projet */
