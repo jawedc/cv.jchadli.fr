@@ -546,7 +546,7 @@ body>div {
   justify-content: center;
   /* Centre les éléments horizontalement */
   gap: 10px;
-  /* Espace entre les éléments */
+  Espace entre les éléments
 }
 
 /* Style pour la boîte contenant les projets */
@@ -569,6 +569,7 @@ body>div {
 .CarteProjet {
   width: 40%;
   /* Largeur de la carte */
+  height: 200px;
   background: #fff;
   /* Fond blanc */
   border-radius: 5px;
@@ -607,7 +608,7 @@ body>div {
 }
 
 #imgprojet1{
-  background-image: url("../img/meteo.png");
+  background-image: url("../img/rpi.png");
   /* Image de fond */
 }
 
@@ -810,93 +811,26 @@ body>div {
 /* Animation "show" */
 @keyframes show {
 
-  0% {
+  0%, 100%{
     margin-top: -450px;
   }
-  5% {
+  5%, 20% {
     margin-top: 0px;
   }
-  20% {
-    margin-top: 0px;
-  }
-  25% {
+  25%, 40% {
     margin-top: -90px;
   }
-  40% {
-    margin-top: -90px;
-  }
-  45% {
+  45%, 60% {
     margin-top: -180px;
   }
-  60% {
-    margin-top: -180px;
-  }
-  65% {
+  65%, 80% {
     margin-top: -270px;
   }
-  80% {
-    margin-top: -270px;
-  }
-  85% {
+  85%, 99.99% {
     margin-top: -360px;
-  }
-  99.99% {
-    margin-top: -360px;
-  }
-  100% {
-    margin-top: -450px;
   }
 }
 
-/* @keyframes flip5 {
-  0% {
-      margin-top: -450px
-  }
-
-  5% {
-      margin-top: -360px
-  }
-
-  20% {
-      margin-top: -360px
-  }
-
-  25% {
-      margin-top: -270px
-  }
-
-  40% {
-      margin-top: -270px
-  }
-
-  45% {
-      margin-top: -180px
-  }
-
-  60% {
-      margin-top: -180px
-  }
-
-  65% {
-      margin-top: -90px
-  }
-
-  80% {
-      margin-top: -90px
-  }
-
-  85% {
-      margin-top: 0px
-  }
-
-  99.99% {
-      margin-top: 0px
-  }
-
-  100% {
-      margin-top: -450px
-  }
-} */
 /* --------------------------------------- */
 /* Styles pour le pied de page */
 
