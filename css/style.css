@@ -570,7 +570,6 @@ body>div {
   width: 40%;
   /* Largeur de la carte */
   height: 200px;
-  /* Hauteur de la carte */
   background: #fff;
   /* Fond blanc */
   border-radius: 5px;
@@ -599,50 +598,48 @@ body>div {
 
 /* Style pour l'image de la carte de projet */
 .CarteProjetImgRPI {
-  background-image: url("../img/server.png");
-  /* Image de fond aléatoire */
-  background-size: cover;
-  /* L'image de fond couvre toute la zone */
-  background-repeat: no-repeat;
-  /* L'image de fond ne se répète pas */
-  background-position: center center;
-  /* L'image de fond est centrée */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarteProjetImgRPI img {
+  height: 200px;
+  width: auto;
 }
 
 /* Style pour l'image de la carte de projet */
 .CarteProjetImgSAE15 {
-  background-image: url("../img/cyber-security.jpg");
-  /* Image de fond aléatoire */
-  background-size: cover;
-  /* L'image de fond couvre toute la zone */
-  background-repeat: no-repeat;
-  /* L'image de fond ne se répète pas */
-  background-position: center center;
-  /* L'image de fond est centrée */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarteProjetImgSAE15 img {
+  height: 200px;
+  width: auto;
 }
 
 .CarteProjetImgSAE12 {
-  background-image: url("../img/cyber-security.jpg");
-  /* Image de fond aléatoire */
-  background-size: cover;
-  /* L'image de fond couvre toute la zone */
-  background-repeat: no-repeat;
-  /* L'image de fond ne se répète pas */
-  background-position: center center;
-  /* L'image de fond est centrée */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarteProjetImgSAE12 img {
+  height: 200px;
+  width: auto;
 }
 
 .CarteProjetImgSAE13 {
-  background-image: url("../img/site2.png");
-  /* Image de fond aléatoire */
-  background-size: cover;
-  /* L'image de fond couvre toute la zone */
-  background-repeat: no-repeat;
-  /* L'image de fond ne se répète pas */
-  background-position: center center;
-  /* L'image de fond est centrée */
-  height: 60%;
-  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarteProjetImgSAE13 img {
+  height: 200px;
+  width: auto;
 }
 
 /* Style pour le texte de la carte de projet */
