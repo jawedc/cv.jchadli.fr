@@ -569,7 +569,7 @@ body>div {
 .CarteProjet {
   width: 40%;
   /* Largeur de la carte */
-  height: 200px;
+  height: 220px;
   background: #fff;
   /* Fond blanc */
   border-radius: 5px;
@@ -599,47 +599,39 @@ body>div {
 /* Style pour l'image de la carte de projet */
 .CarteProjetImgRPI {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .CarteProjetImgRPI img {
-  height: 200px;
-  width: auto;
+  height: 220px;
+  width: 220px;
 }
 
 /* Style pour l'image de la carte de projet */
 .CarteProjetImgSAE15 {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .CarteProjetImgSAE15 img {
-  height: 200px;
-  width: auto;
+  height: 220px;
+  width: 220px;
 }
 
 .CarteProjetImgSAE12 {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .CarteProjetImgSAE12 img {
-  height: 200px;
-  width: auto;
+  height: 220px;
+  width: 220px;
 }
 
-.CarteProjetImgSAE13 {
+.CarteProjetImgSAE14 {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.CarteProjetImgSAE13 img {
-  height: 200px;
-  width: auto;
+.CarteProjetImgSAE14 img {
+  height: 220px;
+  width: 220px;
 }
 
 /* Style pour le texte de la carte de projet */
