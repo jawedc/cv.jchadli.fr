@@ -27,7 +27,7 @@ function mail() {
       alert("Merci de rentrer votre contenu du message");
   } else {
       var email = document.createElement('a');
-      email.href = `mailto:${mail}?subject=Mail from ${prenom} ${nom}, &body=${msg}`;
+      email.href = `mailto:jawed@jchadli.fr?subject=Mail from ${prenom} ${nom}, &body=${msg}`;
       email.click();
   }
 }
