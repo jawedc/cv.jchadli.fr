@@ -1,0 +1,401 @@
+/* Style de base pour la frise */
+.frise {
+  position: relative;
+  /* Position relative pour permettre le positionnement absolu des enfants */
+  width: 660px;
+  /* Largeur fixe de la frise */
+  margin: 0 auto;
+  /* Centrer la frise horizontalement */
+  margin-top: 20px;
+  /* Marge supérieure pour espacer la frise du contenu précédent */
+  padding: 1em 0;
+  /* Padding vertical pour donner de l'espace à l'intérieur de la frise */
+  list-style-type: none;
+  /* Supprimer les puces de liste */
+}
+
+/* Ligne verticale au milieu de la frise */
+.frise:before {
+  position: absolute;
+  /* Positionnement absolu par rapport à la frise */
+  left: 50%;
+  /* Centrer horizontalement */
+  top: 0;
+  /* Commencer en haut */
+  content: ' ';
+  /* Nécessaire pour générer l'élément */
+  display: block;
+  /* Rendre l'élément en bloc */
+  width: 6px;
+  /* Largeur de la ligne */
+  height: 100%;
+  /* Hauteur de la ligne */
+  margin-left: -3px;
+  /* Centrer la ligne */
+  background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+  /* Dégradé vertical pour la ligne */
+  z-index: 5;
+  /* Positionner la ligne au-dessus des autres éléments */
+}
+
+/* Style pour chaque élément de la frise */
+/* Nettoyer les flottants après chaque élément de la frise */
+.frise li:after {
+  content: "";
+  /* Nécessaire pour générer l'élément */
+  display: block;
+  /* Rendre l'élément en bloc */
+  height: 0;
+  /* Hauteur nulle pour ne pas affecter le layout */
+  clear: both;
+  /* Nettoyer les flottants */
+  visibility: hidden;
+  /* Rendre l'élément invisible */
+}
+
+/* Catégorie : Expérience */
+
+/* Style pour l'expérience à gauche */
+.xp-g {
+  position: relative;
+  /* Position relative pour permettre le positionnement absolu des enfants */
+  width: 300px;
+  /* Largeur fixe */
+  float: left;
+  /* Flotter à gauche */
+  text-align: right;
+  /* Aligner le texte à droite */
+}
+
+/* Style pour l'expérience à droite */
+.xp-d {
+  position: relative;
+  /* Position relative pour permettre le positionnement absolu des enfants */
+  width: 300px;
+  /* Largeur fixe */
+  float: right;
+  /* Flotter à droite */
+}
+
+/* Catégorie : Drapeau d'expérience */
+
+/* Style de base pour le drapeau d'expérience */
+.drapeauxp {
+  position: relative;
+  /* Position relative pour permettre le positionnement absolu des enfants */
+  display: inline-block;
+  /* Rendre l'élément en ligne-bloc */
+  text-align: center;
+  /* Centrer le texte */
+}
+
+/* Style pour le titre de l'expérience */
+.titrexp {
+  position: relative;
+  /* Position relative pour permettre le positionnement absolu des enfants */
+  display: inline;
+  /* Rendre l'élément en ligne */
+  background: rgb(248, 248, 248);
+  /* Couleur de fond */
+  padding: 6px 10px;
+  /* Padding pour donner de l'espace au texte */
+  border-radius: 5px;
+  /* Arrondir les coins */
+  font-weight: 600;
+  /* Rendre le texte en gras */
+  text-align: left;
+  /* Aligner le texte à gauche */
+}
+
+/* Style pour le titre de l'expérience à gauche */
+.xp-g .titrexp {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  /* Ombre pour donner de la profondeur */
+}
+
+/* Style pour le titre de l'expérience à droite */
+.xp-d .titrexp {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  /* Ombre pour donner de la profondeur */
+}
+
+/* Style pour le cercle avant le titre de l'expérience */
+.xp-g .titrexp:before,
+.xp-d .titrexp:before {
+  position: absolute;
+  /* Positionnement absolu par rapport au titre */
+  top: 50%;
+  /* Centrer verticalement */
+  right: -40px;
+  /* Positionner à droite pour l'expérience à gauche */
+  content: ' ';
+  /* Nécessaire pour générer l'élément */
+  display: block;
+  /* Rendre l'élément en bloc */
+  width: 12px;
+  /* Largeur du cercle */
+  height: 12px;
+  /* Hauteur du cercle */
+  margin-top: -10px;
+  /* Centrer le cercle */
+  background: #fff;
+  /* Couleur de fond du cercle */
+  border-radius: 10px;
+  /* Arrondir les coins pour rendre le cercle rond */
+  border: 4px solid #165E8E;
+  /* Bordure du cercle */
+  z-index: 10;
+  /* Positionner le cercle au-dessus des autres éléments */
+}
+
+/* Positionner le cercle à gauche pour l'expérience à droite */
+.xp-d .titrexp:before {
+  left: -40px;
+}
+
+/* Style pour la flèche après le titre de l'expérience */
+.xp-g .titrexp:after,
+.xp-d .titrexp:after {
+  content: "";
+  /* Nécessaire pour générer l'élément */
+  position: absolute;
+  /* Positionnement absolu par rapport au titre */
+  top: 50%;
+  /* Centrer verticalement */
+  height: 0;
+  /* Hauteur nulle pour ne pas affecter le layout */
+  width: 0;
+  /* Largeur nulle pour ne pas affecter le layout */
+  margin-top: -8px;
+  /* Centrer la flèche */
+  border: solid transparent;
+  /* Bordure transparente pour créer la flèche */
+  border-width: 8px;
+  /* Taille de la flèche */
+  pointer-events: none;
+  /* Ignorer les événements de la souris */
+}
+
+/* Positionner la flèche à droite pour l'expérience à gauche */
+.xp-g .titrexp:after {
+  left: 100%;
+  border-left-color: rgb(248, 248, 248);
+  /* Couleur de la flèche */
+}
+
+/* Positionner la flèche à gauche pour l'expérience à droite */
+.xp-d .titrexp:after {
+  right: 100%;
+  border-right-color: rgb(248, 248, 248);
+  /* Couleur de la flèche */
+}
+
+
+/* Style pour l'année du drapeau d'expérience */
+.anneedrapeauxp {
+  display: inline;
+  /* Rendre l'élément en ligne */
+  line-height: 1em;
+  /* Hauteur de ligne pour aligner le texte verticalement */
+  font-size: 0.66666em;
+  /* Taille de la police plus petite */
+  color: #165E8E;
+  /* Couleur du texte */
+  vertical-align: middle;
+  /* Aligner le texte verticalement au milieu */
+}
+
+/* Les drapeaux dans les éléments .xp-g sont alignés à gauche */
+.xp-g .anneedrapeauxp {
+  float: left;
+  /* Alignement à gauche */
+}
+
+/* Les drapeaux dans les éléments .xp-d sont alignés à droite */
+.xp-d .anneedrapeauxp {
+  float: right;
+  /* Alignement à droite */
+}
+
+/* ================ Styles pour l'élément .anneexp ================ */
+
+/* L'élément .anneexp est affiché en ligne avec un peu de marge et un fond gris clair */
+.anneexp {
+  display: inline-block;
+  /* Affichage en ligne */
+  padding: 4px 6px;
+  /* Marge interne de 4px en haut et en bas, 6px à gauche et à droite */
+  background: rgb(248, 248, 248);
+  /* Fond gris clair */
+}
+
+/* ================ Styles pour l'élément .descriptionxp ================ */
+
+/* L'élément .descriptionxp a une marge autour, une taille de police plus petite, est en italique et a une hauteur de ligne plus grande */
+.descriptionxp {
+  margin: 1em 0.75em 0 0;
+  /* Marge de 1em en haut, 0.75em à droite, 0 en bas et à gauche */
+  font-size: 0.77777em;
+  /* Taille de police plus petite */
+  font-style: italic;
+  /* Texte en italique */
+  line-height: 1.5em;
+  /* Hauteur de ligne plus grande */
+}
+
+/* Dans les éléments .xp-d, l'élément .descriptionxp a une marge différente */
+.xp-d .descriptionxp {
+  margin: 1em 0 0 0.75em;
+  /* Marge de 1em en haut, 0 à droite et en bas, 0.75em à gauche */
+}
+
+/* ================ Media Queries pour les écrans de taille inférieure à 660px ================ */
+
+/* Règles CSS pour les écrans dont la largeur est inférieure ou égale à 660px */
+@media screen and (max-width: 660px) {
+
+  /* Règles pour la classe .frise */
+  .frise {
+      width: 100%;
+      /* Largeur de 100% pour occuper tout l'espace disponible */
+      padding: 4em 0 1em 0;
+      /* Marge intérieure de 4em en haut, 1em en bas pour espacer le contenu */
+  }
+
+  /* Règles pour les éléments de liste dans .frise */
+  .frise li {
+      padding: 2em 0;
+      /* Marge intérieure de 2em en haut et en bas pour espacer les éléments de la liste */
+  }
+
+  /* Règles pour les classes .xp-g et .xp-d */
+  .xp-g,
+  .xp-d {
+      float: none;
+      /* Aucun flottement pour aligner les éléments les uns sous les autres */
+      width: 100%;
+      /* Largeur de 100% pour occuper tout l'espace disponible */
+      text-align: center;
+      /* Centrage du texte */
+  }
+
+  /* Règles pour la classe .drapeauxp */
+  .drapeauxp {
+      text-align: center;
+      /* Centrage du texte */
+  }
+
+  /* Règles pour la classe .titrexp */
+  .titrexp {
+      background: rgb(255, 255, 255);
+      /* Fond blanc pour le titre */
+      z-index: 15;
+      /* Positionnement du titre au-dessus des autres éléments */
+  }
+
+  /* Règles pour le pseudo-élément :before dans .xp-g .titrexp et .xp-d .titrexp */
+  .xp-g .titrexp:before,
+  .xp-d .titrexp:before {
+      position: absolute;
+      /* Positionnement absolu pour le placer précisément */
+      top: -30px;
+      /* Positionnement 30px au-dessus du titre */
+      left: 50%;
+      /* Centrage horizontal */
+      content: ' ';
+      /* Contenu vide nécessaire pour afficher le pseudo-élément */
+      display: block;
+      /* Affichage en tant que bloc */
+      width: 12px;
+      /* Largeur de 12px */
+      height: 12px;
+      /* Hauteur de 12px */
+      margin-left: -9px;
+      /* Marge gauche négative pour centrer le pseudo-élément */
+      background: #fff;
+      /* Fond blanc */
+      border-radius: 10px;
+      /* Bord arrondi pour un aspect circulaire */
+      border: 4px solid #165E8E;
+      /* Bordure de 4px, rouge */
+      z-index: 10;
+      /* Positionnement sous le titre */
+  }
+
+  /* Règles pour le pseudo-élément :after dans .xp-g .titrexp et .xp-d .titrexp */
+  .xp-g .titrexp:after,
+  .xp-d .titrexp:after {
+      content: "";
+      /* Contenu vide nécessaire pour afficher le pseudo-élément */
+      position: absolute;
+      /* Positionnement absolu pour le placer précisément */
+      left: 50%;
+      /* Centrage horizontal */
+      top: -8px;
+      /* Positionnement 8px au-dessus du titre */
+      height: 0;
+      /* Hauteur de 0 pour créer un triangle */
+      width: 0;
+      /* Largeur de 0 pour créer un triangle */
+      margin-left: -8px;
+      /* Marge gauche négative pour centrer le pseudo-élément */
+      border: solid transparent;
+      /* Bordure transparente pour créer un triangle */
+      border-bottom-color: rgb(255, 255, 255);
+      /* Couleur de la bordure inférieure pour créer un triangle */
+      border-width: 8px;
+      /* Largeur de la bordure pour créer un triangle */
+      pointer-events: none;
+      /* Désactivation des événements de la souris sur le pseudo-élément */
+  }
+
+  /* Catégorie : anneedrapeauxp */
+  .anneedrapeauxp {
+      display: block;
+      /* Permet à l'élément de remplir toute la largeur disponible */
+      position: relative;
+      /* Positionne l'élément par rapport à sa position normale */
+      margin: 4px 0 0 0;
+      /* Ajoute une marge en haut de l'élément */
+      z-index: 14;
+      /* Contrôle l'ordre d'empilement des éléments */
+  }
+
+  .xp-g .anneedrapeauxp,
+  .xp-d .anneedrapeauxp {
+      float: none;
+      /* L'élément ne flotte pas à gauche ou à droite des éléments adjacents */
+  }
+
+  /* Catégorie : descriptionxp */
+  .descriptionxp {
+      position: relative;
+      /* Positionne l'élément par rapport à sa position normale */
+      margin: 1em 0 0 0;
+      /* Ajoute une marge en haut de l'élément */
+      padding: 1em;
+      /* Ajoute de l'espace autour du contenu de l'élément */
+      background: rgb(245, 245, 245);
+      /* Définit la couleur d'arrière-plan de l'élément */
+      -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+      /* Ajoute une ombre à l'élément pour les navigateurs WebKit (Chrome, Safari) */
+      -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+      /* Ajoute une ombre à l'élément pour les navigateurs Mozilla (Firefox) */
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+      /* Ajoute une ombre à l'élément pour les autres navigateurs */
+      z-index: 15;
+      /* Contrôle l'ordre d'empilement des éléments */
+  }
+
+  .xp-g .descriptionxp,
+  .xp-d .descriptionxp {
+      position: relative;
+      /* Positionne l'élément par rapport à sa position normale */
+      margin: 1em 1em 0 1em;
+      /* Ajoute une marge autour de l'élément */
+      padding: 1em;
+      /* Ajoute de l'espace autour du contenu de l'élément */
+      z-index: 15;
+      /* Contrôle l'ordre d'empilement des éléments */
+  }
+}
